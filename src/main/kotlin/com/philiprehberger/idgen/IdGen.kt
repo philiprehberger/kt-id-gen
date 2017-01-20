@@ -8,7 +8,7 @@ import java.util.UUID
  *
  * All methods are thread-safe and use [SecureRandom] for cryptographic randomness.
  */
-object IdGen {
+public object IdGen {
 
     private const val BASE62_ALPHABET = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
@@ -21,7 +21,7 @@ object IdGen {
      *
      * @return a 26-character uppercase ULID string
      */
-    fun ulid(): String = Ulid.generate()
+    public fun ulid(): String = Ulid.generate()
 
     /**
      * Generates a NanoID with configurable size and alphabet.
@@ -33,7 +33,7 @@ object IdGen {
      * @param alphabet the character set to use (default: URL-safe `A-Za-z0-9_-`)
      * @return a random string of the given [size]
      */
-    fun nanoid(size: Int = 21, alphabet: String = NanoId.DEFAULT_ALPHABET): String =
+    public fun nanoid(size: Int = 21, alphabet: String = NanoId.DEFAULT_ALPHABET): String =
         NanoId.generate(size, alphabet)
 
     /**
@@ -41,7 +41,7 @@ object IdGen {
      *
      * @return a UUID string in the format `xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx`
      */
-    fun uuid(): String = UUID.randomUUID().toString()
+    public fun uuid(): String = UUID.randomUUID().toString()
 
     /**
      * Generates a prefixed ID by combining a string prefix with a ULID.
@@ -51,7 +51,7 @@ object IdGen {
      * @param prefix the prefix to prepend (e.g. "usr", "ord", "txn")
      * @return a string in the format `{prefix}_{ulid}`
      */
-    fun prefixed(prefix: String): String = "${prefix}_${ulid()}"
+    public fun prefixed(prefix: String): String = "${prefix}_${ulid()}"
 
     /**
      * Generates a short UUID by encoding a UUID v4 in Base62.
@@ -61,7 +61,7 @@ object IdGen {
      *
      * @return a 22-character Base62-encoded UUID string
      */
-    fun uuidShort(): String {
+    public fun uuidShort(): String {
         val uuid = UUID.randomUUID()
         return encodeBase62(uuid.mostSignificantBits, uuid.leastSignificantBits)
     }
