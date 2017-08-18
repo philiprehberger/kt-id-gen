@@ -1,5 +1,9 @@
 # id-gen
 
+[![Tests](https://github.com/philiprehberger/kt-id-gen/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-id-gen/actions/workflows/publish.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/id-gen.svg)](https://central.sonatype.com/artifact/com.philiprehberger/id-gen)
+[![License](https://img.shields.io/github/license/philiprehberger/kt-id-gen)](LICENSE)
+
 ID generation for Kotlin: ULID, NanoID, Snowflake, and prefixed IDs.
 
 ## Installation
@@ -58,6 +62,13 @@ val id = snowflake.nextId()        // 123456789012345678
 | `IdGen.prefixed(prefix)` | Prefixed ULID in format `{prefix}_{ulid}` |
 | `SnowflakeGenerator(machineId)` | Creates a Snowflake generator for 64-bit IDs |
 | `SnowflakeGenerator.nextId()` | Generates next Snowflake ID (41-bit timestamp + 10-bit machine + 12-bit sequence) |
+
+## Development
+
+```bash
+./gradlew build
+./gradlew test
+```
 
 ## License
 
