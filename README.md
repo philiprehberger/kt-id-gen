@@ -11,7 +11,7 @@ ID generation for Kotlin: ULID, NanoID, Snowflake, and prefixed IDs.
 ### Gradle Kotlin DSL
 
 ```kotlin
-implementation("com.philiprehberger:id-gen:0.1.0")
+implementation("com.philiprehberger:id-gen:0.1.4")
 ```
 
 ### Maven
@@ -20,7 +20,7 @@ implementation("com.philiprehberger:id-gen:0.1.0")
 <dependency>
     <groupId>com.philiprehberger</groupId>
     <artifactId>id-gen</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.4</version>
 </dependency>
 ```
 
