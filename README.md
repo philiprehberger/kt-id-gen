@@ -2,8 +2,7 @@
 
 [![Tests](https://github.com/philiprehberger/kt-id-gen/actions/workflows/publish.yml/badge.svg)](https://github.com/philiprehberger/kt-id-gen/actions/workflows/publish.yml)
 [![Maven Central](https://img.shields.io/maven-central/v/com.philiprehberger/id-gen.svg)](https://central.sonatype.com/artifact/com.philiprehberger/id-gen)
-[![License](https://img.shields.io/github/license/philiprehberger/kt-id-gen)](LICENSE)
-[![Sponsor](https://img.shields.io/badge/sponsor-GitHub%20Sponsors-ec6cb9)](https://github.com/sponsors/philiprehberger)
+[![Last updated](https://img.shields.io/github/last-commit/philiprehberger/kt-id-gen)](https://github.com/philiprehberger/kt-id-gen/commits/main)
 
 ID generation for Kotlin: ULID, NanoID, Snowflake, and prefixed IDs.
 
@@ -71,6 +70,24 @@ val id = snowflake.nextId()        // 123456789012345678
 ./gradlew test
 ```
 
+## Support
+
+If you find this project useful:
+
+⭐ [Star the repo](https://github.com/philiprehberger/kt-id-gen)
+
+🐛 [Report issues](https://github.com/philiprehberger/kt-id-gen/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
+
+💡 [Suggest features](https://github.com/philiprehberger/kt-id-gen/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement)
+
+❤️ [Sponsor development](https://github.com/sponsors/philiprehberger)
+
+🌐 [All Open Source Projects](https://philiprehberger.com/open-source-packages)
+
+💻 [GitHub Profile](https://github.com/philiprehberger)
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/philiprehberger)
+
 ## License
 
-MIT
+[MIT](LICENSE)
